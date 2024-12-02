@@ -19,7 +19,7 @@ for AMD64 Windows.
 ```
 sudo apt-get install  mingw-w64 git make
 git clone https://github.com/Cyanide-zh/adb-fastboot_windows-amd64/
-cd adb-win64
+cd adb-fastboot_windows-amd64
 
 # Get the sources from Google
 ./get-sources.sh
