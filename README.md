@@ -1,6 +1,6 @@
-# Cross compile the Android Debug Bridge (adb) for 64-bit Windows
+# Cross compile the Android Debug Bridge (adb) & fastboot for AMD64 Windows
 
-This is an all-in-one script to build the Android adb tool (v 1.0.36) for 64-bit Windows architecture.
+This is an all-in-one script to build the Android adb and fastboot tool for AMD64 Windows architecture.
 When executed, the script will download all the necessary files and it will run a custom makefile to build `adb.exe`
 executable.
 
@@ -8,7 +8,7 @@ By default, the Android SDK for Windows includes a 32-bit version of the Android
 Some versions of Windows, such as Nano Server, do not include a 32-bit subsystem.
 
 This project contains scripts which allow you to cross-compile adb on a Linux machine (we've used Ubuntu 16.04)
-for 64-bit Windows.
+for AMD64 Windows.
 
 ## Requirements
 * A Git client
@@ -18,7 +18,7 @@ for 64-bit Windows.
 
 ```
 sudo apt-get install  mingw-w64 git make
-git clone https://github.com/qmfrederik/adb-win64/
+git clone https://github.com/Cyanide-zh/adb-fastboot_windows-amd64/
 cd adb-win64
 
 # Get the sources from Google
