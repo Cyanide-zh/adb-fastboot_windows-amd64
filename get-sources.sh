@@ -9,7 +9,8 @@ tar -xvzf openssl-1.0.2j.tar.gz
 # -------------------------
 
 # Branch to checkout from Android source code repo
-branch=android-7.1.2_r33
+# Check here: https://android.googlesource.com/platform/system/core/+refs
+branch=android14-qpr3-s15-release
 
 # DOWNLOAD necessary files
 # -------------------------
