@@ -1,0 +1,26 @@
+name: Build platform-tools
+on:
+  watch:
+    types: [started]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build platform-tools by ${{ github.actor }}
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+    - uses: actions/checkout@v3
+    - name: Download & compile
+      run: |
+        cd adb-fastboot_windows-amd64
+        ./get-sources.sh
+        ./dependencies.sh
+        ./build.sh
+    - name: Setup build kernel environment
+      run: |
+        echo "compilation completed "$(date)
+        
+
+    
